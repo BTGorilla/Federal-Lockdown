@@ -1,0 +1,275 @@
+html,
+body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+body {
+    font-family: 'Verdana', sans-serif;
+    background:
+        linear-gradient(to bottom right, #a5bddc, #e0f7fa);
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 14px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: linear-gradient(to bottom, #fff 0%, #f5f5f5 100%);
+    border: 3px ridge #bbb;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+
+header p {
+    font-style: italic;
+    color: #666;
+    font-size: 1rem;
+}
+
+nav {
+    padding: 10px 0;
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a, .button {
+    color: #222;
+    background-color: #f5f5f5;
+    border: 2px outset #bbb;
+    font-weight: bold;
+    padding: 8px 18px;
+    border-radius: 4px;
+    box-shadow: 1px #ccc;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+nav ul li a:hover {
+    background-color: #e1e1e1;
+    border: 2px inset #888;
+}
+
+main {
+    display: block;
+    padding: 0;
+}
+
+.profile-card {
+    background: linear-gradient(to bottom, #f0f8ff 0%, #dbdbe6 100%);
+    border: 3px ridge #b0c4de;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.profile-card h2,
+.recent-posts h2 {
+    background: linear-gradient(to bottom, #f5f5f5 0%, #e0e0e0 100%);
+    border: 1px outset #bbb;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    color: #007BFF;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+}
+
+.profile-card .profile-flex {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.profile-card .profile-pic {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.profile-card .profile-details p {
+    margin: 0.5em 0;
+}
+
+.recent-posts {
+    background-color: #f0f8ff;
+    border: 3px ridge #b0c4de;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.recent-posts article {
+    border-bottom: 1px dotted #999;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.recent-posts article:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.recent-posts h3 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 1.2rem;
+}
+
+.post-meta {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.read-more-button {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    border-radius: 3px;
+    background: linear-gradient(to bottom, #fff, #E0E0E0);
+    border: 1.5px solid #888;
+    outline: 2px solid transparent;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.read-more-button:hover {
+    background: #e1e1e1;
+}
+
+.post-summary {
+    font-weight: bold;
+}
+
+.post-full-text.hidden,
+.post-summary.hidden {
+    display: none;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 1em;
+    color: #fff;
+    padding-top: 10px;
+    text-align: center;
+    background: transparent;
+    font-weight: bold;
+    text-shadow: 0 2px 6px #000, 0 0px 2px #000;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+    bottom: 0;
+}
+
+footer p {
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+}
+
+.profile-details .profile-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile-details .profile-list li {
+    margin-bottom: 1em;
+}
+
+
+.deleted-entry {
+    color: red;
+    font-weight: lighter;
+}
+
+.bottom-grass {
+    width: 100vw;
+    height: 100vw;
+    background: url('assets/grass.webp') repeat-x left bottom;
+    background-size: auto 220px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    z-index: 1;
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .profile-card,
+    .recent-posts {
+        padding: 10px;
+    }
+
+    .profile-card h2,
+    .recent-posts h2 {
+        font-size: 1.3rem;
+    }
+
+    .button,
+    .read-more-button {
+        padding: 6px 12px;
+    }
+
+    footer {
+        font-size: 0.9em;
+    }
+}
